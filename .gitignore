@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+
+# Build / firmware
+build/
+.pio/
+.pioenvs/
+*.bin
+*.elf
+*.map
+*.o
+*.a
+
+# KiCad (fichiers de sauvegarde / sortie)
+*-backups/
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.bak
+fp-info-cache
+*.net
+\#auto_saved_files#
+*.000
+*.dsn
+*.ses
+gerbers/
+*.gbr
+*.drl
+
+# Éditeurs
+.vscode/
+*.swp
+*~

@@ -1,0 +1,22 @@
+# Manifeste vcstool de l'écosystème nidmi.
+#   pip install vcstool
+#   vcs import < nidmi-modular/nidmi.repos   # depuis le dossier parent → clone tout en sibling
+#   vcs pull                                  # tout mettre à jour
+# Remplacer `version: main` par un commit/tag pour figer (épingler) une dépendance.
+repositories:
+  nidmi-core:
+    type: git
+    url: https://github.com/patricecolet/nidmi-core.git
+    version: main
+  NiDMI:
+    type: git
+    url: https://github.com/patricecolet/NiDMI.git
+    version: main
+  nidmi-modular:
+    type: git
+    url: https://github.com/patricecolet/nidmi-modular.git
+    version: main
+  nidmi-circuit-lab:
+    type: git
+    url: https://github.com/patricecolet/nidmi-circuit-lab.git
+    version: main

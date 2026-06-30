@@ -19,6 +19,35 @@
 
 ---
 
+## Checklist — tous les modules
+
+> Liste à plat de **tout ce qui est à construire** (détail/justif dans les sections ci-dessous).
+> ~81 modules. Coché = esquisse/maquette faite.
+
+**A. Cœur matrice** (KiCad) : `tileSource` · `tileCrosspoint` · `tileDestination` · `backplaneI2C` · `mockup8x8`
+
+**B. Infrastructure** : `[x]` **virtualGround** ✅ · `alimentation` · `voltageRef` · `cvInputFrontier` · `cvOutputFrontier` · `adcTap`
+
+**C.1 Noise** : `[x]` **whiteNoiseGenerator** ✅ · `noisePink` · `noiseMultiColor` · `noiseDigitalLFSR`
+**C.2 S&H / Random** : `sampleHold` · `randomCV` · `turingMachine` · `sourceOfUncertainty`
+
+**D.1 VCO** : `vcoNE555` · `vcoOtaTriangle` · `vcoCEM3340` · `vcoMoogExpo` · `vcoWavetable`
+**D.2 VCF** : `vcfSallenKeyMS20` · `vcfStateVariable` · `vcfCEM3320` · `vcfMoogLadder` · `vcfDiodeLadder` · `vcfBuchlaLPG`
+**D.3 EG** : `egAR` · `egADSR555` · `egCEM3310` · `egVCADSR` · `egFunctionGen`
+**D.4 VCA** : `vcaOTA` · `vcaVintageLM13700` · `vcaSSI2164` · `vcaDiscreteOTA`
+**D.5 LFO** : `lfo555` · `lfoOpAmpMulti` · `lfoICL8038` · `lfoVCLFO` · `lfoDigital`
+**D.6 Autres** : `slewLimiter` · `quantizer` · `comparator`
+
+**E. Utilitaires de patch** : `attenuverter` · `mult` · `mixer` · `offset` · `clockDivider` · `lineOut`
+
+**F.1 Continus** : `potBankDirect` · `potBankMux` · `potBankI2C` · `potBankMuxI2C` · `faderBankMotorized` · `encoderBankGPIO` · `encoderBankMCP23017` · `encoderBankI2CRing` · `encoderAbsoluteAS5600`
+**F.2 Pads** : `padCapacitive` · `padPiezoVelocity` · `padFSRPressure` · `ribbonSoftPot` · `padMPEgrid`
+**F.3 Grilles & séq.** : `seqAnalog4017` · `buttonMatrixLED` · `gridRGB` · `padGridRGB` · `seqPerformer`
+**F.4 Visualisation** : `ledIndicators` · `ledBargraph` · `oledSSD1306` · `miniScopeTFT` · `multiDisplayTFT`
+**F.5 Patchbay** : `patchbayWeb` · `patchbayNetwork` · `patchbayEncoderOLED` · `patchbayButtonGrid`
+
+---
+
 ## A. Cœur — la matrice de routage CV (KiCad)
 
 Tuiles I²C empilables. C'est le produit principal du dépôt.

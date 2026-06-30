@@ -43,3 +43,7 @@ firmware/   Firmware de contrôle (RoutingFabric), cible nidmi-core
 2. Lire [`docs/SPEC_MATRICE_ROUTAGE_CV_HARDWARE.md`](docs/SPEC_MATRICE_ROUTAGE_CV_HARDWARE.md) (pièces, prix, étages d'interface).
 3. Décisions à trancher : **rails** (±5 V I²C ADG2188 *(reco)* vs ±12/−5 MT8816) et **pilotage du patch** (UI / scripts / réseau).
 4. Maquette : une tuile **8×8** bout-en-bout avant de paver la grille.
+
+## Contribuer
+
+Installation de l'écosystème et workflow de branches : [`CONTRIBUTING.md`](CONTRIBUTING.md).

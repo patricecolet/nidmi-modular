@@ -4,6 +4,10 @@ Fritzing est open-source (GPL) : seul le **binaire** est payant. On le **compile
 l'avoir gratuitement et garder ses vues **breadboard / stripboard** (raison pour laquelle
 on le préfère à KiCad pour les modules simples).
 
+> 💡 **Binaires prêts à l'emploi** (macOS arm64, Windows x64) :
+> [releases de `nidmi-circuit-lab`](https://github.com/patricecolet/nidmi-circuit-lab/releases).
+> Ce document ne sert qu'au **build manuel** (autres plateformes, ou débogage de la CI).
+
 > Cible : **macOS arm64** (Apple Silicon). Le build vit **hors** du dépôt `nidmi-modular`
 > (ex. `~/src/fritzing/`), seul ce doc est versionné.
 

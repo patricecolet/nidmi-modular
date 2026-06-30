@@ -51,6 +51,17 @@ Si un changement touche aussi une dépendance (ex. `nidmi-core`) :
 - chaque PR **référence l'autre** ;
 - merger le dépôt dépendance d'abord.
 
+## Outil — Fritzing
+
+Les modules simples sont conçus dans **Fritzing**. Binaires prêts à l'emploi (gratuits) :
+[releases de `nidmi-circuit-lab`](https://github.com/patricecolet/nidmi-circuit-lab/releases)
+(macOS Apple Silicon, Windows x64).
+
+- **macOS** (app non notarisée) : au 1er lancement, débloquer avec
+  `xattr -dr com.apple.quarantine /Applications/Fritzing.app`.
+- **Windows** (binaire non signé) : SmartScreen → *Informations complémentaires ▸ Exécuter quand même*.
+- Sinon, build manuel : [`docs/BUILD_FRITZING.md`](docs/BUILD_FRITZING.md).
+
 ## Où contribuer
 
 - **Modules à construire** : [`docs/ROADMAP.md`](docs/ROADMAP.md) (checklist en tête).
